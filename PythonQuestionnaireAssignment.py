@@ -59,6 +59,7 @@ if answer == "yes":
 if answer == "no":
     correct += 1
     print("Correct! Spiders are arachnids, which are technically not insects. You have gotten" ,correct, "question(s) right so far.")
+time.sleep(1.0)
 print("Final question! Are all mammals warm blooded? Type yes or no as an answer.")
 answer = input("")
 if answer == "yes":
