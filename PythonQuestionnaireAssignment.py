@@ -1,12 +1,15 @@
 import time
  
 correct = 0
+#The variable correct is going to tell the user how many questions they've got right
 print("Hello there! Please insert your name.")
 name = input()
+#The hello message is printed and shown to the user to start the AI to user interaction. The name = input message lets the user enter their name.
 print(name,"? That's a strange name.")
-time.sleep(0.7)
+time.sleep(1.0)
+#The time.sleep function allows for the user to have a second to read before going over the next line that the AI will tell them.
 print("Well, "  + name, "welcome to the Animal Python Quiz! I've got some problems for you that I'd like you to solve.")
-time.sleep(0.8)
+time.sleep(1.0)
 print("Are you ready for this quiz?")
 time.sleep(1.0)
 print("Please type yes or no, depending on if you're ready for this quiz.")
@@ -15,9 +18,12 @@ if answer == "yes":
     print("Great! Let's proceed.")
 else: 
     print("Take your time and prepare. Please restart the terminal when you're ready.")
+#This if/else conditional will be used to determine what happens in this coding project, based on what the user replies to questionss.
+#This will be seen further in the coding a lot.
 if answer == "yes":
     print("Alright! Question one! Are lions from the canine animal family? Type yes or no as an answer.")
 answer = input("")
+#answer is continuously redefined and used so that the response over time to its input can change, along with the conditions of a yes or no response.
 if answer == "yes":
     correct += 0
     print("That is incorrect. You have gotten" ,correct, "question(s) right so far.")
@@ -28,7 +34,9 @@ time.sleep(1.0)
 print("Question two! Is the fastest animal on the planet the cheetah? Type yes or no as an answer.")
 answer = input("")
 if answer == "yes":
-    correct += 0 
+    correct += 0
+#The correct variable is going to consistently have values added to it's prior total using +=, 
+#allowing us to keep record of how many questions are right based on answers given.
     print("That is incorrect. You have gotten" ,correct, "question(s) right so far.")
 if answer == "no":
     correct += 1
