@@ -12,7 +12,7 @@ print("Well, "  + name, "welcome to the Animal Python Quiz! I've got some proble
 time.sleep(1.0)
 print("Are you ready for this quiz?")
 time.sleep(1.0)
-print("Please type yes or no, depending on if you're ready for this quiz. Please note that yes and no are case sensitive.")
+print("Please type yes or no, depending on if you're ready for this quiz. Please note that yes and no are case sensitive when asked from this point onwards.")
 answer = input("")
 if answer == "yes":
     print("Great! Let's proceed.")
@@ -80,7 +80,7 @@ elif answer == "no":
 else:
     print("Invalid answer. You have gotten" ,correct, "question(s) correct so far, please select yes or no as an answer next time.")
 time.sleep(1.0)
-if correct >= 2.5:
+if correct < 4:
     print("You have passed the quiz!")
 elif correct >= 4:
     print("You have passed the quiz with flying colours!")
