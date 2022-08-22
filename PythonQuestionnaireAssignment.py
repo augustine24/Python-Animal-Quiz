@@ -68,6 +68,13 @@ if answer == "yes":
 if answer == "no":
     correct += 0
     print("Incorrect. You have completed the quiz with" ,correct, "answer(s) correct.")
+time.sleep(1.0)
+if correct >= 2.5:
+    print("You have passed the quiz!")
+if correct >= 4:
+    print("You have passed the quiz with flying colours!")
+if correct < 2.5: 
+    print("You have failed the quiz.")
 print("Thank you for playing," ,name,"!")
 
 
