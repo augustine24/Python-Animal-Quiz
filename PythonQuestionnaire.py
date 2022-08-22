@@ -84,6 +84,6 @@ if correct < 4:
     print("You have passed the quiz!")
 elif correct >= 4:
     print("You have passed the quiz with flying colours!")
-elif correct < 2.5: 
+elif correct < 3: 
     print("You have failed the quiz.")
 print("Thank you for playing," ,name,"!")
